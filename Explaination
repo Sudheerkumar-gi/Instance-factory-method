@@ -1,0 +1,17 @@
+Your program is a simple demonstration of how a factory class can be used to create objects in Java. Here’s the explanation in plain text:
+
+The Car class defines a car with a registration number and a method called driving() that prints "I'm driving" when called.
+
+The CarFactory class is responsible for creating and returning new Car objects. This separates the object creation logic from the main program.
+
+In the main method, you first create an object of CarFactory. Then you call its createCar() method, which gives you a new Car object. Finally, you call the driving() method on that car object to display the message.
+
+This shows the idea of the Factory Method pattern: instead of directly using new Car() in the main program, you let the factory handle object creation. This makes the code more flexible, because later you can change the factory to produce different types of cars without changing the main logic.
+
+In short:
+
+Car → defines behavior.
+
+CarFactory → creates cars.
+
+main → uses the factory to get a car and call its method.
