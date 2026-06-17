@@ -1,4 +1,3 @@
-import java.util.*;
 class Car
 {
     int registerno=12334;
@@ -8,7 +7,7 @@ class Car
 }
 class CarFactory
 {
-    public car createCar(){
+    public Car createCar(){
         Car c=new Car();
         return c;
     }
